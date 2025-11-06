@@ -1,0 +1,5 @@
+config SHIELD_DERSBOARD_LEFT
+    def_bool $(shields_list_contains,dersboard_left)
+
+config SHIELD_DERSBOARD_RIGHT
+    def_bool $(shields_list_contains,dersboard_right)
