@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 / {
 	combos {
@@ -7,8 +8,14 @@
 
 		zmk_studio_combo {
 			timeout-ms = <50>;
-			key-positions = <0 9 30 33>;
+			key-positions = <0 30>;
 			bindings = <&studio_unlock>;
+		};
+
+		bt_layer_combo {
+			timeout-ms = <50>;
+			key-positions = <0 31>;
+			bindings = <&tog 7>;
 		};
 	};
 
@@ -61,6 +68,15 @@
 
 		layer6 {
 			status = "reserved";
+		};
+
+		bt_layer {
+			bindings = <
+&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none
+&bt BT_PRV &bt BT_NXT &none &none &bt BT_CLR &none &none &none &none &none
+&bootloader &sys_reset &none &none &none &none &none &none &none &none
+&none &none &none &none
+			>;
 		};
 	};
 };
