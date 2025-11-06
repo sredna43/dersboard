@@ -17,19 +17,48 @@
 
 		default_layer {
 			bindings = <
-			&kp B &kp L &kp D &kp C &kp V &kp J &kp Y &kp U &kp O &kp COMMA
-			&kp N &kp R &kp T &kp S &kp G &kp P &kp H &kp E &kp A &kp I
-			&kp X &kp Q &kp M &kp W &kp Z &kp K &kp F &kp SEMI &kp SQT &kp DOT
-			                  &mo 1 &mt LSHIFT ENTER &mo 2 &kp SPACE
+		&kp B &kp L &kp D &kp C &kp V            &kp J &kp Y &kp U    &kp O   &kp COMMA
+		&kp N &kp R &kp T &kp S &kp G            &kp P &kp H &kp E    &kp A   &kp I
+		&kp X &kp Q &kp M &kp W &kp Z            &kp K &kp F &kp SEMI &kp SQT &kp DOT
+				  &mo 1 &mt LSHIFT ENTER &mo 2 &kp SPACE
 			>;
 		};
 
 		symbol_layer {
 			bindings = <
-	&kp GRAVE &kp AT &kp HASH &kp DOLLAR &kp PRCNT &kp CARET &kp LBRC &kp RBRC &kp STAR &kp QMARK
-	&kp SLASH &kp EXCL &kp MINUS &kp EQUAL &kp LT &kp GT &kp LPAR &kp RPAR &kp DOT &kp DQT
-	&kp TILDE &kp PLUS &kp UNDER &kp SEMI &kp PIPE &kp AMPS &kp LBKT &kp RBKT &kp COMMA &kp SQT
+&kp GRAVE &kp AT   &kp HASH  &kp DOLLAR &kp PRCNT &kp CARET &kp LBRC &kp RBRC &kp STAR  &kp QMARK
+&kp SLASH &kp EXCL &kp MINUS &kp EQUAL  &kp LT    &kp GT    &kp LPAR &kp RPAR &kp DOT   &kp DQT
+&kp TILDE &kp PLUS &kp UNDER &kp SEMI   &kp PIPE  &kp AMPS  &kp LBKT &kp RBKT &kp COMMA &kp SQT
+	                     &none      &none     &mo 3     &kp BSLH
 			>;
 		};
+
+		fn_layer {
+			bindings = <
+&kp ESC   &kp RIGHT &none    &none     &none &kp DOWN &none    &none &none   &none
+&kp TAB   &none     &none    &kp PSCRN &none &kp C_PP &kp LEFT &none &kp DEL &kp BSPC
+&sk LCTRL &sk LALT  &sk LGUI &none     &none &none    &none    &none &none   &none
+                             &none     &none &none    &none
+			>;
+		};
+
+		number_layer {
+&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
+&kp F11 &kp F12 &none &none &none &none &none &none &none &none
+&none &none &none &none
+		};
+
+		layer4 {
+			status = "reserved";
+		};
+
+		layer5 {
+			status = "reserved";
+		};
+
+		layer6 {
+			status = "reserved";
+		};
 	};
-}
+};
