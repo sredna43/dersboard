@@ -20,7 +20,7 @@
 			&kp B &kp L &kp D &kp C &kp V &kp J &kp Y &kp U &kp O &kp COMMA
 			&kp N &kp R &kp T &kp S &kp G &kp P &kp H &kp E &kp A &kp I
 			&kp X &kp Q &kp M &kp W &kp Z &kp K &kp F &kp SEMI &kp SQT &kp DOT
-			                  &mo 1 &mt LSHIFT ENT &mo 2 &kp SPACE
+			                  &mo 1 &mt LSHIFT ENTER &mo 2 &kp SPACE
 			>;
 		};
 	};
